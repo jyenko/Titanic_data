@@ -75,13 +75,13 @@ print cabin['Fare'].mean()
 print "Median fare based on class"
 print cabin['Fare'].median()
 
-#Display the number of passengers in each class
-print "Total number of passengers in each class"
-print cabin.size()
-
 #Display the percentage of survivors by class
 print "Percentage of survivors by class"
 print df.groupby(['Class'])['Survived'].mean()
+
+#Display the total number of passengers in each class
+print "Total number of passengers in each class"
+print cabin.size()
 
 #Display the percentage of survivors by gender
 print "Percentage of survivors by gender"
