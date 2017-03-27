@@ -64,6 +64,7 @@ print "Mean fare based on survival status"
 print survivors['Fare'].mean()
 
 #Display the number of survivors and the number of non survivors
+print "Total number of survivors and non survivors"
 print survivors.size()
 
 #Display the mean fare for each class
@@ -75,15 +76,19 @@ print "Median fare based on class"
 print cabin['Fare'].median()
 
 #Display the number of passengers in each class
+print "Total number of passengers in each class"
 print cabin.size()
 
 #Display the percentage of survivors by class
+print "Percentage of survivors by class"
 print df.groupby(['Class'])['Survived'].mean()
 
 #Display the percentage of survivors by gender
+print "Percentage of survivors by gender"
 print df.groupby(['Sex'])['Survived'].mean()
 
 #Display the total number of male and female passengers in the dataset
+print "Total number of passengers in the dataset by gender"
 print df.groupby(['Sex']).size()
 
 #Create a histogram showing the fare distributions for survivors and non survivors simultaneously
